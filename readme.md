@@ -2,6 +2,8 @@
 
 A tiny, simple and dynamic grid system.
 
+[Example](http://codepen.io/nblackburn/full/PwNQQV)
+
 ## Introduction
 
 Before you run away at the sight of yet another grid system, Gridlock was designed to be diffrent because it puts you as it's focus point and as a result uses plain english class names and a simple structure to create the grids that you want. If you don't like something, change it to your liking and everything will continue to work at the change of a property.
