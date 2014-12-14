@@ -1,0 +1,48 @@
+@import 'partials/_variables';
+@import 'partials/_mixins';
+
+/*
+ * Gridlock
+ * A unique twist on the css grid system.
+ *
+ * @version 0.6
+ * @license MIT <http://opensource.org/licenses/MIT>
+ * @support support@nblackburn.uk
+ * @website http://nblackburn.uk
+*/
+*, *:before, *:after
+{
+    box-sizing: border-box;
+}
+
+@media(max-width: 800px)
+{
+    [class*='@{gridlock-column-name}']
+    {
+      margin: 0 !important;
+      width: 100% !important;
+    }
+}
+
+.@{gridlock-row-name}
+{    
+    margin: auto;
+    
+    // build dynamic classes
+    .build_columns();
+    .build_pushers();
+    .build_pullers();
+    
+    [class*='@{gridlock-column-name}-']
+    {
+        float: left;
+        padding: @gridlock-gutter;
+    }
+    
+    &:after
+    {
+        content: '\0020';
+        display: table;
+        clear: both;
+    }
+}
