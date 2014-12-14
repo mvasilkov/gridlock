@@ -2,9 +2,9 @@
 
 A tiny, simple and dynamic grid system.
 
-## How does it work?
+## Introduction
 
-Gridlock uses dynamic classes to create the perfect layout for your needs.
+Before you run away at the sight of yet another grid system, Gridlock was designed to be diffrent because it puts you as it's focus point and as a result uses plain english class names and a simple structure to create the grids that you want. If you don't like something, change it to your liking and everything will continue to work at the change of a property.
 
 ```html
 <div class="row">
@@ -13,18 +13,27 @@ Gridlock uses dynamic classes to create the perfect layout for your needs.
 </div>
 ```
 
-Providing your class names add up to that of the total columns, you can mix and match any amount of columns and widths you like.
+> Providing your class names add up to that of the total columns, you can mix and match any amount of columns and widths you like.
 
 ## Properties
 
-You can change any of the properties Gridlock uses to your liking, here is a table detailing the available properties you are free to tinker with:
+| Name                 | Description                              | Default |
+| -------------------- | ---------------------------------------- | ------- |
+| gridlock-columns     | The number of columns to use in the grid | 12      |
+| gridlock-row-name    | The name to use for rows                 | row     |
+| gridlock-column-name | The name to use for columns              | column  |
+| gridlock-puller-name | The name to use for pullers              | push    |
+| gridlock-pusher-name | The name to use for pullers              | pull    |
+| gridlock-gutter      | The gutter between columns               | .5em    |
 
-| Name                 | Description                                 |
-| -------------------- | ------------------------------------------- |
-| gridlock-row-name    | The name used for the row class.            |
-| gridlock-column-name | The name used for the column class.         |
-| gridlock-columns     | The number of columns to use                |
-| gridlock-padding     | The padding between the columns             |
+## Compatibility
+
+| Browser           | Supported                         |
+| ----------------- | --------------------------------- |
+| Chrome            | yes                               |
+| Firefox           | yes                               |
+| Internet Explorer | partial (_from version 8_)        |
+| Opera             | yes                               |
 
 ## License
 
