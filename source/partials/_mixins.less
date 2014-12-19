@@ -1,18 +1,17 @@
-.build_columns(@columns: 12, @index: 1) when (@index <= @columns)
-{
-    .@{gridlock-column-name}-@{index}
-    {
+.build_columns(@columns: 12, @index: 1) when (@index <= @columns) {
+    .@{gridlock-column-name}-@{index} {
         width: (@index / @columns) * 100%;
+        .no-collapse {
+            width: (@index / @columns) * 100% !important;
+        }
     }
     
     // loop again
     .build_columns(@columns, (@index + 1));
 }
 
-.build_pushers(@columns: 12, @index: 1) when (@index <= @columns)
-{
-    .@{gridlock-pusher-name}-@{index}
-    {
+.build_pushers(@columns: 12, @index: 1) when (@index <= @columns) {
+    .@{gridlock-pusher-name}-@{index} {
         margin-left: (@index / @columns) * 100%;
     }
     
@@ -20,10 +19,8 @@
     .build_pushers(@columns, (@index + 1));
 }
 
-.build_pullers(@columns: 12, @index: 1) when (@index <= @columns)
-{
-    .@{gridlock-puller-name}-@{index}
-    {
+.build_pullers(@columns: 12, @index: 1) when (@index <= @columns) {
+    .@{gridlock-puller-name}-@{index} {
         margin-right: (@index / @columns) * 100%;
     }
 

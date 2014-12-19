@@ -10,8 +10,7 @@
  * @support support@nblackburn.uk
  * @website http://nblackburn.uk
 */
-*, *:before, *:after
-{
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
@@ -19,17 +18,15 @@ html {
     box-sizing: border-box;
 }
 
-@media(max-width: 800px)
-{
-    [class*='@{gridlock-column-name}']
-    {
-      margin: 0 !important;
-      width: 100% !important;
+@media(max-width: 800px) {
+    [class*='@{gridlock-column-name}'] {
+        margin: 0 !important;
+        width: 100% !important;
     }
 }
 
-.@{gridlock-row-name}
-{    
+.@{gridlock-row-name} {
+    
     margin: auto;
     
     // build dynamic classes
@@ -37,14 +34,14 @@ html {
     .build_pushers();
     .build_pullers();
     
-    [class*='@{gridlock-column-name}-']
-    {
+    [class*='@{gridlock-column-name}-'] {
         float: left;
-        padding: @gridlock-gutter;
+        &:not(.nested) {
+            padding: @gridlock-gutter;
+        }
     }
     
-    &:after
-    {
+    &:after {
         content: '\0020';
         display: table;
         clear: both;
