@@ -8,7 +8,7 @@
  * Gridlock
  * A unique twist on the css grid system.
  *
- * @version 0.7
+ * @version 0.8.2
  * @license MIT <http://opensource.org/licenses/MIT>
  * @support support@nblackburn.uk
  * @website http://nblackburn.uk
@@ -27,73 +27,73 @@ html {
 .row .column-1 {
   width: 8.33333333%;
 }
-.row .column-1 .no-collapse {
+.row .column-1 .fixed {
   width: 8.33333333% !important;
 }
 .row .column-2 {
   width: 16.66666667%;
 }
-.row .column-2 .no-collapse {
+.row .column-2 .fixed {
   width: 16.66666667% !important;
 }
 .row .column-3 {
   width: 25%;
 }
-.row .column-3 .no-collapse {
+.row .column-3 .fixed {
   width: 25% !important;
 }
 .row .column-4 {
   width: 33.33333333%;
 }
-.row .column-4 .no-collapse {
+.row .column-4 .fixed {
   width: 33.33333333% !important;
 }
 .row .column-5 {
   width: 41.66666667%;
 }
-.row .column-5 .no-collapse {
+.row .column-5 .fixed {
   width: 41.66666667% !important;
 }
 .row .column-6 {
   width: 50%;
 }
-.row .column-6 .no-collapse {
+.row .column-6 .fixed {
   width: 50% !important;
 }
 .row .column-7 {
   width: 58.33333333%;
 }
-.row .column-7 .no-collapse {
+.row .column-7 .fixed {
   width: 58.33333333% !important;
 }
 .row .column-8 {
   width: 66.66666667%;
 }
-.row .column-8 .no-collapse {
+.row .column-8 .fixed {
   width: 66.66666667% !important;
 }
 .row .column-9 {
   width: 75%;
 }
-.row .column-9 .no-collapse {
+.row .column-9 .fixed {
   width: 75% !important;
 }
 .row .column-10 {
   width: 83.33333333%;
 }
-.row .column-10 .no-collapse {
+.row .column-10 .fixed {
   width: 83.33333333% !important;
 }
 .row .column-11 {
   width: 91.66666667%;
 }
-.row .column-11 .no-collapse {
+.row .column-11 .fixed {
   width: 91.66666667% !important;
 }
 .row .column-12 {
   width: 100%;
 }
-.row .column-12 .no-collapse {
+.row .column-12 .fixed {
   width: 100% !important;
 }
 .row .push-1 {
