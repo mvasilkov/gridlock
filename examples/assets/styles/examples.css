@@ -1,7 +1,13 @@
 .box {
+    color: grey;
+    padding: 1em;
     text-align: center;
     border-radius: 4px;
-    background-color: #333333;
-    color: #eeeeee;
-    padding: 1em;
+    border: 1px grey dashed;
+    background-color: white;
+}
+
+.conceal .box {
+	color: green;
+	border-color: green;
 }
