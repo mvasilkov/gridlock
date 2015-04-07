@@ -1,3 +1,4 @@
+@import 'partials/_responsive';
 @import 'partials/_variables';
 @import 'partials/_mixins';
 
@@ -16,13 +17,6 @@
 
 html {
     box-sizing: border-box;
-}
-
-@media(max-width: 800px) {
-    [class*='@{gridlock-column-name}'] {
-        margin: 0 !important;
-        width: 100% !important;
-    }
 }
 
 .@{gridlock-row-name} {
