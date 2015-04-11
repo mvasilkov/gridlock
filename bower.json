@@ -1,0 +1,21 @@
+{
+  "name": "gridlock",
+  "version": "0.8.3",
+  "homepage": "https://github.com/mvasilkov/gridlock",
+  "authors": [
+    "Nathaniel Blackburn (https://github.com/nblackburn)"
+  ],
+  "description": "A tiny, simple and dynamic grid system.",
+  "main": "gridlock.css",
+  "keywords": [
+    "css",
+    "grid",
+    "less"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
